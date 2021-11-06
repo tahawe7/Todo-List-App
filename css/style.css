@@ -67,3 +67,12 @@ body {
   cursor: pointer;
   padding: 5px 3px;
 }
+.delallbtn {
+  background-color: #1c1d2e;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+  position: absolute;
+  left: 46%;
+}

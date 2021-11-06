@@ -112,3 +112,15 @@ function toggleStatusTaskWith(taskId) {
   }
   addDataToLocalStorageFrom(arrayOfTasks);
 }
+
+// Delete All Button
+let container = document.querySelector(".form");
+let delAllBtn = document.createElement("button");
+delAllBtn.className = "delallbtn";
+delAllBtn.appendChild(document.createTextNode("Delete All"));
+container.after(delAllBtn);
+
+delAllBtn.onclick = () => {
+  tasksDiv.innerHTML = "";
+  window.localStorage.removeItem("tasks", JSON.stringify(arrayOfTasks));
+};
